@@ -173,6 +173,12 @@ $(function() {
     }
 
   // menu - search
+    $(".nav-bar .zx-container .nav-icons .search-icon").on("click", function() {
+      $(this).toggleClass("lnr-magnifier");
+      $(this).toggleClass("lnr-cross");
+    });
+
+
 
     $(".nav-bar .zx-container .nav-icons .menu-icon").on("click", function() {
       $(".fixed-menu").fadeIn();
