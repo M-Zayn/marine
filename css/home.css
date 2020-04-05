@@ -2069,7 +2069,7 @@ a:hover, a:focus {
     margin: 30px 0 25px 0;
   }
   .footer .copyrights .copy {
-    padding: 0 30px;
+    padding: 0 0;
   }
 }
 
