@@ -62,6 +62,8 @@ $(function() {
       responsiveClass:true,
       responsive:{
           0:{
+              nav:false,
+              dots:true,
               items:1
           },
           600:{
@@ -85,6 +87,8 @@ $(function() {
       responsiveClass:true,
       responsive:{
           0:{
+              nav:false,
+              dots:true,
               items:1
           },
           600:{
@@ -108,6 +112,8 @@ $(function() {
       responsiveClass:true,
       responsive:{
           0:{
+              nav:false,
+              dots:true,
               items:1
           },
           600:{
@@ -134,6 +140,8 @@ $(function() {
         responsiveClass:true,
         responsive:{
             0:{
+                nav:false,
+                dots:true,
                 items:1
             },
             600:{
