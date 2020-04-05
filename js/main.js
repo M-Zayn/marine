@@ -128,7 +128,6 @@ $(function() {
     $(".new-arrival .zx-container .owl-prev").html('<span class="lnr lnr-chevron-right"></span>');
 
     if($(window).width() < 767) {
-      $(".categories .category .category-img img").removeAttr("data-aos");
       $(".categories .col-md-4").wrapAll("<div class='owl-Carousel'></div>");
       $('.categories .owl-Carousel').owlCarousel({
         rtl: document.dir == 'rtl' ? true : false,
@@ -155,8 +154,6 @@ $(function() {
       $(".categories .owl-next").html('<span class="lnr lnr-chevron-left"></span>');
       $(".categories .owl-prev").html('<span class="lnr lnr-chevron-right"></span>');
 
-      $(".categories .categories-header h2, .categories .categories-header p").removeAttr("data-aos");
-      $(".panner .panner-img img").removeAttr("data-aos");
       $(".service .zx-container .serv div").removeAttr("data-aos");
       $(".footer .footer-slide").removeAttr("data-aos");
     } else {
