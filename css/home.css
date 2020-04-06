@@ -597,7 +597,7 @@ a:hover, a:focus {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 7;
+  z-index: 9;
   width: 80%;
   height: 50px;
   -webkit-transition: all .3s ease-in-out;
