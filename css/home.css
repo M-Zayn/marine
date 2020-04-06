@@ -190,8 +190,8 @@ a:hover, a:focus {
   max-width: 50%;
   position: absolute;
   top: 63%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0) rotateY(180deg);
+  transform: translate3d(-50%, -50%, 0) rotateY(180deg);
 }
 
 @-webkit-keyframes fade-scale-up-down {
@@ -1824,7 +1824,7 @@ a:hover, a:focus {
   }
   .nav-bar .zx-container .nav-icons .card-icon .card-item-num {
     font-size: 13px;
-    padding: 3px;
+    padding: 3px 0 0 0;
   }
   .nav-bar .zx-container .lang-switcher {
     display: none;
@@ -2334,6 +2334,11 @@ a:hover, a:focus {
 }
 
 /*------ other direction ------*/
+html[dir="ltr"] .pre-loader .progress-bar {
+  -webkit-transform: translate3d(-50%, -50%, 0) rotateY(0deg);
+  transform: translate3d(-50%, -50%, 0) rotateY(0deg);
+}
+
 html[dir="ltr"] .nav-bar .zx-container .nav-links ul li {
   margin: 0 25px 0 0;
 }
