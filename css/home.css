@@ -74,7 +74,7 @@ a:hover, a:focus {
   right: 0;
   bottom: 0;
   z-index: 9999;
-  background-color: #F5F5F5;
+  background-color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,8 +86,20 @@ a:hover, a:focus {
           align-items: center;
 }
 
-.pre-loader img {
-  width: 60px;
+.pre-loader .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @-webkit-keyframes loader {
@@ -157,14 +169,24 @@ a:hover, a:focus {
 }
 
 .pre-loader .progress-bar {
-  background-color: transparent;
+  background-color: #c8cccc;
   border: none;
-  border-radius: 60px;
   overflow: hidden;
-  width: 20%;
-  height: 5px;
+  width: 200px;
+  height: 2px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  margin: 42px 0 0 0;
+}
+
+.pre-loader .progress-bar .Shape_1 {
+  background-color: #c8cccc;
+  position: absolute;
+  left: 583px;
+  top: 459px;
+  width: 200px;
+  height: 2px;
+  z-index: 4;
 }
 
 .pre-loader .progress-bar span {
@@ -172,7 +194,7 @@ a:hover, a:focus {
 }
 
 .pre-loader .bar {
-  background: rgba(0, 0, 0, 0.075);
+  background-color: #c8cccc;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -182,20 +204,15 @@ a:hover, a:focus {
   animation: loader 8s ease infinite;
   background: #0076ca;
   border: none;
-  border-radius: 50px;
   color: #fff;
   padding: 0px;
   width: 0;
-  height: 5px;
+  height: 2px;
 }
 
 .pre-loader .progress-bar {
-  left: 50%;
-  max-width: 50%;
-  position: absolute;
-  top: 63%;
-  -webkit-transform: translate3d(-50%, -50%, 0) rotateY(180deg);
-  transform: translate3d(-50%, -50%, 0) rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 @-webkit-keyframes fade-scale-up-down {
@@ -2184,9 +2201,6 @@ a:hover, a:focus {
 }
 
 @media (max-width: 480px) {
-  .pre-loader .progress-bar {
-    width: 30%;
-  }
   .nav-bar .zx-container .logo {
     width: 130px;
   }
@@ -2339,8 +2353,8 @@ a:hover, a:focus {
 
 /*------ other direction ------*/
 html[dir="ltr"] .pre-loader .progress-bar {
-  -webkit-transform: translate3d(-50%, -50%, 0) rotateY(0deg);
-  transform: translate3d(-50%, -50%, 0) rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 html[dir="ltr"] .nav-bar .zx-container .nav-links ul li {
