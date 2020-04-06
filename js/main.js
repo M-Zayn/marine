@@ -161,6 +161,7 @@ $(function() {
       $(".categories .owl-next").html('<span class="lnr lnr-chevron-left"></span>');
       $(".categories .owl-prev").html('<span class="lnr lnr-chevron-right"></span>');
 
+      $(".categories .category .category-img img").removeAttr("data-aos");
       $(".service .zx-container .serv div").removeAttr("data-aos");
       $(".footer .footer-slide").removeAttr("data-aos");
     } else {
@@ -202,5 +203,6 @@ $(function() {
       });
     
   
+
   
 });
