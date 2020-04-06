@@ -17,8 +17,15 @@ $(function() {
 
 
   $(".nav-bar .zx-container .nav-icons .search-icon").on("click", function() {
-    $(".nav-bar .search-popup").toggleClass("show")
+    $(this).toggleClass("lnr-magnifier");
+    $(this).toggleClass("lnr-cross");
+    $(".nav-bar .search-popup").toggleClass("show");
+    // $(".search-overlay").fadeIn();
   });
+  // $(".search-overlay").on("click", function() {
+  //   $(".nav-bar .search-popup").removeClass("show");
+  //   $(this).fadeOut();
+  // });
   
   // $('a[data-scroll]').on("click",function (e){
   //   e.preventDefault();    
@@ -170,10 +177,6 @@ $(function() {
     }
 
   // menu - search
-    $(".nav-bar .zx-container .nav-icons .search-icon").on("click", function() {
-      $(this).toggleClass("lnr-magnifier");
-      $(this).toggleClass("lnr-cross");
-    });
 
 
 
@@ -199,6 +202,5 @@ $(function() {
       });
     
   
-
   
 });
