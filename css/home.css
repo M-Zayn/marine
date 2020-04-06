@@ -163,6 +163,8 @@ a:hover, a:focus {
   overflow: hidden;
   width: 20%;
   height: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .pre-loader .progress-bar span {
@@ -171,6 +173,8 @@ a:hover, a:focus {
 
 .pre-loader .bar {
   background: rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .pre-loader .progress {
