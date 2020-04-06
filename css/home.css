@@ -87,8 +87,7 @@ a:hover, a:focus {
 }
 
 .pre-loader img {
-  -webkit-animation: fade-scale-up-down 1.1s infinite alternate;
-          animation: fade-scale-up-down 1.1s infinite alternate;
+  width: 60px;
 }
 
 @-webkit-keyframes loader {
@@ -159,11 +158,11 @@ a:hover, a:focus {
 
 .pre-loader .progress-bar {
   background-color: transparent;
-  border: 1px solid #0076ca;
+  border: none;
   border-radius: 60px;
   overflow: hidden;
-  width: 30%;
-  height: 12px;
+  width: 20%;
+  height: 5px;
 }
 
 .pre-loader .progress-bar span {
@@ -172,26 +171,25 @@ a:hover, a:focus {
 
 .pre-loader .bar {
   background: rgba(0, 0, 0, 0.075);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
 }
 
 .pre-loader .progress {
   -webkit-animation: loader 8s ease infinite;
   animation: loader 8s ease infinite;
   background: #0076ca;
+  border: none;
   border-radius: 50px;
   color: #fff;
-  padding: 5px;
+  padding: 0px;
   width: 0;
-  height: 100%;
+  height: 5px;
 }
 
 .pre-loader .progress-bar {
   left: 50%;
   max-width: 50%;
   position: absolute;
-  top: 70%;
+  top: 63%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
@@ -1824,6 +1822,10 @@ a:hover, a:focus {
   .nav-bar .zx-container .nav-icons .fav-icon {
     display: none;
   }
+  .nav-bar .zx-container .nav-icons .card-icon .card-item-num {
+    font-size: 13px;
+    padding: 3px;
+  }
   .nav-bar .zx-container .lang-switcher {
     display: none;
   }
@@ -2033,6 +2035,7 @@ a:hover, a:focus {
   .footer .footer-slide ul {
     display: none;
     margin: 0 0 15px 0;
+    padding: 0 10px 0 0;
   }
   .footer .footer-slide .subscribe {
     width: 80%;
@@ -2178,7 +2181,7 @@ a:hover, a:focus {
 
 @media (max-width: 480px) {
   .pre-loader .progress-bar {
-    width: 50%;
+    width: 30%;
   }
   .nav-bar .zx-container .logo {
     width: 130px;
@@ -2331,11 +2334,6 @@ a:hover, a:focus {
 }
 
 /*------ other direction ------*/
-html[dir="ltr"] .pre-loader .bar {
-  -webkit-transform: rotateY(0deg) !important;
-          transform: rotateY(0deg) !important;
-}
-
 html[dir="ltr"] .nav-bar .zx-container .nav-links ul li {
   margin: 0 25px 0 0;
 }
@@ -2461,6 +2459,12 @@ html[dir="ltr"] .footer .copyrights .by img {
   }
   html[dir="ltr"] .fixed-menu .menu .menu-list > ul ul {
     padding: 0 0 0 9px;
+  }
+  html[dir="ltr"] .footer .footer-slide h3 {
+    margin: 0 0 20px 10px !important;
+  }
+  html[dir="ltr"] .footer .footer-slide ul {
+    padding: 0 0 0 10px;
   }
   html[dir="ltr"] .footer .footer-slide h3::after {
     left: unset;
