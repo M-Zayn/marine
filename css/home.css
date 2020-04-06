@@ -191,7 +191,7 @@ a:hover, a:focus {
   left: 50%;
   max-width: 50%;
   position: absolute;
-  top: 75%;
+  top: 70%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
